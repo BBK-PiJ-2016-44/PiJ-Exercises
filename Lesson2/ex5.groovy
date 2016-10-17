@@ -28,8 +28,10 @@ println ("Point 2 y coord: ")
 downRight.y = Double.parseDouble(System.console().readLine())
 
 area = Math.abs((upLeft.x - downRight.x) * (upLeft.y - downRight.y))
-perimeter = 2*(Math.abs(upLeft
+perimeter = 2*(Math.abs(upLeft.x - downRight.x) + Math.abs(upLeft.y - downRight.y))
 
 
 println ("Area = " + area)
+println ("Perimeter = " + perimeter) 
+
 
