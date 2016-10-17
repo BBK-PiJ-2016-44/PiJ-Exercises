@@ -1,0 +1,10 @@
+String str1, str2
+print "First name: "
+str1 = System.console().readLine()
+print "Last name: "
+str2 = System.console().readLine()
+print ("Your name is " + str1 + " " + str2)
+
+
+
+
