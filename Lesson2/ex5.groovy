@@ -14,24 +14,25 @@ class Rectangle {
 } 
 
 Rectangle rect = new Rectangle();
-Point upLeft = new Point();
-Point downRight = new Point();
+rect.upLeft = new Point();
+rect.downRight = new Point();
 
 println ("Point 1 x coord: ")
-upLeft.x = Double.parseDouble(System.console().readLine())
+rect.upLeft.x = Double.parseDouble(System.console().readLine())
 println ("Point 1 y coord: ")
-upLeft.y = Double.parseDouble(System.console().readLine())
+rect.upLeft.y = Double.parseDouble(System.console().readLine())
 
 println ("Point 2 x coord: ")
-downRight.x = Double.parseDouble(System.console().readLine())
+rect.downRight.x = Double.parseDouble(System.console().readLine())
 println ("Point 2 y coord: ")
-downRight.y = Double.parseDouble(System.console().readLine())
+rect.downRight.y = Double.parseDouble(System.console().readLine())
 
-area = Math.abs((upLeft.x - downRight.x) * (upLeft.y - downRight.y))
-perimeter = 2*(Math.abs(upLeft.x - downRight.x) + Math.abs(upLeft.y - downRight.y))
+area = Math.abs((rect.upLeft.x - rect.downRight.x) * (rect.upLeft.y - rect.downRight.y))
+perimeter = 2*(Math.abs(rect.upLeft.x - rect.downRight.x) + Math.abs(rect.upLeft.y - rect.downRight.y))
 
 
 println ("Area = " + area)
 println ("Perimeter = " + perimeter) 
 
 
+\\ To access an attribute of a class within a class, use e.g. rect.upLeft.x
