@@ -35,4 +35,4 @@ println ("Area = " + area)
 println ("Perimeter = " + perimeter) 
 
 
-\\ To access an attribute of a class within a class, use e.g. rect.upLeft.x
+// To access an attribute of a class within a class, use e.g. rect.upLeft.x
