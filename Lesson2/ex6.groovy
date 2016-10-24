@@ -36,3 +36,16 @@ println ("Perimeter = " + perimeter)
 
 
 // To access an attribute of a class within a class, use e.g. rect.upLeft.x
+
+Point P = new Point()
+println ("Enter the x coord of another point: ")
+P.x = Double.parseDouble(System.console().readLine())
+println ("Enter the y coord of another point: ")
+P.y = Double.parseDouble(System.console().readLine())
+
+if (P.x > rect.upLeft.x  && P.x < rect.downRight.x && P.y > rect.downRight.y && P.y < rect.upLeft.y) {
+	println ("That point is inside the rectangle") 
+	} else { 
+	println ("That point is outside the rectangle") 
+} 
+

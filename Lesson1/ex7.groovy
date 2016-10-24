@@ -1,19 +1,53 @@
-str = System.console().readLine()
-int first = Integer.parseInt(str)
-str = System.console().readLine()
-int second = Integer.parseInt(str)
-str = System.console().readLine()
-int third = Integer.parseInt(str)
+// ex7 naive sort 
 
-if (first < second) {
-	if (first < third) { 
-		if (second < third) {
-			print first + "," + second + "," + third
-		}else {
-			print first + "," + third + "," + second
-		}	
+
+str = System.console().readLine()
+int a = Integer.parseInt(str)
+str = System.console().readLine()
+int b = Integer.parseInt(str)
+str = System.console().readLine()
+int c = Integer.parseInt(str)
+
+if (a > b) {
+	if (a > c) { 
+		max = a 
+		if (b > c) {
+			mid = b 
+			min = c
+		} else { 
+			mid = c
+			min = b
+		}		
+	} else { 
+		mid = a
+		if (b > c) { 
+			max = b
+			min = c
+		} else { 
+			max = c 
+			min = b
+		}
+	}
+} else {
+	if (b > c) {
+		max = b
+		if (a > c) { 
+			mid = a
+			min = c 
+		} else { 
+			mid = c 
+			min = a
+		}
+	} else { 
+		mid = b
+		max = c 
+		min = a
 	}
 }
 
-println "Sorting complete"
+
+ 
+println ( min + ", " + mid + ", " + max)
+println (" Sorting complete") 
+
 

@@ -42,5 +42,7 @@ if ((atob > atoc) && (btoc>atoc)) {
 	println ("b and c are closest")
 } else if ((atoc>atob) && (btoc>atob)) {
 	println ("a and b are closest")
-}
+} else {println ("They are all equidistant!")} // To catch if all points are equally spaced 
+
+
 

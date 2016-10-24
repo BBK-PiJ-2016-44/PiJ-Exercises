@@ -10,7 +10,7 @@ x = Double.parseDouble(System.console().readLine())
 println ("Enter second number: ")
 y = Double.parseDouble(System.console().readLine())
 
-println("Choose an operation: ") 
+println("Choose an operation: add, sub, mul or div ")  // Give user options to avoid crash. Later add exception control
 operation = System.console().readLine()
 
 switch (operation) {
