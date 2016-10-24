@@ -1,0 +1,8 @@
+//ex 1 Scope
+
+j is only visible within lines 10 - 15
+i is only visible within lines 9 - 16 
+size is visible from line 2 - 20
+newSize is visible within lines 4 - 6
+
+
