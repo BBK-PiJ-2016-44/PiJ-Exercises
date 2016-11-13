@@ -10,23 +10,31 @@ public class Patient {
 		this.name = name;
 		this.age = age;
 		this.illness = illness;
-		this.nextPatient = null; // Pointer to another patient!
+		this.nextPatient = null; // Pointer to another patient
 	}
 	
-	public Patient getPatient() { 
-		return this;
+	public String getName() {
+		return name;
 	}
 	
-	public void setPatient(Patient newPatient) { 
-		this.Patient = newPatient;
+	public int getAge() {
+		return age;
 	}
+	
+	public String getIllness() {
+		return illness;
+	}
+	
+	//public void setPatient(Patient newPatient) { 
+	//	this.nextPatient = newPatient;
+	//}
 	
 	public Patient getNextPatient() { 
-		return this.nextPatient;
+		return nextPatient;
 	}
 	
 	public void setNextPatient(Patient newPatient) { 
-		this.nextPatient = newPatient;
+		nextPatient = newPatient;
 	}
 
 }
