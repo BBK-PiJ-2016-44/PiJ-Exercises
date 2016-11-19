@@ -1,7 +1,7 @@
 public class SimpleMapImpl implements SimpleMap { 
 
 	private static final int Size = 1000;
-	private String[] = mapArray;
+	private String[]  mapArray;
 	
 	public SimpleMapImpl() { 
 		mapArray = new String[Size];
@@ -10,9 +10,9 @@ public class SimpleMapImpl implements SimpleMap {
 	public void put(int key, String name) { 
 		if (mapArray[key] == null) {             // If key doesn't already exist..
 			mapArray[key] = name;			// add name to that key
-			System.out.println("Added" + name + " to key [" + key + "].");
+			System.out.println("Added " + name + " to key [" + key + "].");
 		} else { 
-			System.out.println( mapArray[key] + " already linked to key " + key + ".")
+			System.out.println( mapArray[key] + " already linked to key " + key + ".");
 		}
 	}
 
@@ -21,7 +21,7 @@ public class SimpleMapImpl implements SimpleMap {
 	}
 	
 	public void remove(int key) { 
-			System.out.println("Remove " + name + " key " + key);
+			System.out.println("Removed " + get(key) + " key " + key);
 		if (mapArray[key] != null) {
 			mapArray[key] = null;
 		} else { 
@@ -29,5 +29,13 @@ public class SimpleMapImpl implements SimpleMap {
 		}	
 	}
 	
-	public boolean isEmpty() {}
+	public boolean isEmpty() {
+		int i = 0;
+		for (i=0;i<=Size;i++) { 
+			if (mapArray[i] != null) {
+				return false;
+			}
+		}
+		return true;
+	}
 }
