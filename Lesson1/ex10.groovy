@@ -11,23 +11,28 @@ boolean first = true
 println ("Enter positive numbers, one after the other, -1 to finish.") 
 x = Integer.parseInt(System.console().readLine()) 
 
-while (x != -1) {
-	if (first == false) {
-		 if (x != prevx + 1 ) and (x != prevx - 1) {
-			flag = false
-		}
-	}
-	prevx = x 
-	x = Integer.parseInt(System.console().readLine())
-	
-} 
-
-
-if (flag) {	
-	println ("Numbers were consecutive") 
+if (x == -1) { 
+	println ("List is empty");
+	return;
 } else { 
-	println("Numbers were not consecutive") 
-} 	
+	while (x != -1) {
+		if (first == false) {
+			if ((x != prevx + 1 ) && (x != prevx - 1)) {
+				flag = false;
+			}
+		}
+		prevx = x 
+		println ("Enter next number: ")
+		x = Integer.parseInt(System.console().readLine())
+		first = false;
+	
+	} 
+	if (flag) {	
+		println ("Numbers were consecutive") 
+	} else { 
+		println("Numbers were not consecutive") 
+	} 	
+}
 
 
 			

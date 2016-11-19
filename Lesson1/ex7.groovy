@@ -1,6 +1,6 @@
 // ex7 naive sort 
 
-
+println "Enter 3 numbers, pressig enter between each number, to be sorted: "
 str = System.console().readLine()
 int a = Integer.parseInt(str)
 str = System.console().readLine()
